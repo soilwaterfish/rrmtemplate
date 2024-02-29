@@ -1,0 +1,326 @@
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px 5px rgba(#005838,.15);
+  border: none;
+  min-height: 40px;
+    --bs-navbar-padding-x: .66rem;
+    --bs-navbar-padding-y: .5rem;
+    --bs-navbar-color: #000;
+    --bs-navbar-hover-color: #000;
+    --bs-navbar-disabled-color: #000;
+    --bs-navbar-active-color: #000;
+    --bs-navbar-brand-padding-y: -.25rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 2rem;
+    --bs-navbar-brand-color: #000;
+    --bs-navbar-brand-hover-color: #000;
+}
+
+.dropdown-menu {
+
+--bs-dropdown-link-hover-font: font-size: 200px;
+--bs-dropdown-link-hover-bg: #484f5e;
+
+}
+
+.navbar-light .navbar-nav .nav-item>.nav-link:hover {
+    background: rgba(27,106,218,0.1);
+    color: white !important;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+    background-color: #005838 !important;
+    opacity: 0.8 !important;
+    color: white !important;
+}
+
+
+#toc>.nav a.nav-link.active {
+    text-decoration: underline;
+    color: #283140;
+    background-color: #005838 !important;
+    opacity: 0.8 !important;
+    color: white !important;
+
+}
+
+.btn-primary {
+    --bs-btn-color: #FFF;
+    --bs-btn-bg: #005838;
+    --bs-btn-border-color: #005838;
+    opacity: 0.6;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #283140;
+    --bs-btn-hover-border-color: #283140;
+    --bs-btn-focus-shadow-rgb: 61,128,224;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #283140;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(40,49,64,0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #283140;
+    --bs-btn-disabled-border-color: #283140;
+}
+
+.navbar a.nav-link {
+	font-size: 1.2rem;
+	background-color: 0 !important;
+	opacity: 0.8 !important;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+.tab-content {
+    display: flex;
+    border: none !important;
+
+}
+
+.nav>li>a {
+   color: #819198 !important;
+}
+
+.nav-pills>li>a:hover, .nav-pills>li>a:focus, .nav-pills>li.active>a,     .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+     color: white !important;
+     background-color: #005838 !important;
+     opacity: 0.8 !important;
+     }
+
+.nav-pills {
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #005838;
+    --bs-nav-pills-link-hover-color: #fff;
+    --bs-nav-pills-link-hover-bg: #005838;
+}
+
+.nav {
+    --bs-nav-link-color: #606c71;
+    --bs-nav-link-hover-color: #005838;
+}
+#hexlogo {
+  height: 40px;
+  float: left;
+  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+img.logo {
+  width: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  #hexlogo {
+    height: 30px;
+  }
+  .navbar .navbar-brand {
+    line-height: 19px;
+  }
+  .navbar .navbar-form {
+    margin: 3px 5px 3px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .navbar-brand {
+    padding-right: 0;
+    margin-right: -120px;
+  }
+}
+
+// undo designer choice in pkgdown to add a lot of whitespace under h1
+@media (min-width: 576px){
+  .template-home .page-header {
+      min-height: 0;
+  }
+}
+
+.nav-text.text-muted.me-auto {
+  color: #000 !important;
+}
+
+// upstream pkgdown sets those to baseline which looked bad with our logo
+.navbar > .container {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* Footer */
+
+
+/* Position hack to get full width footer even though pkgdown puts it inside a container
+ * See: https://css-tricks.com/full-width-containers-limited-width-parents/
+ */
+
+ footer h5 {
+   color: white;
+ }
+
+ footer a {
+   text-decoration: none;
+ }
+
+ footer a:hover, footer ul li a:hover {
+   text-decoration: underline !important;
+ }
+.cc-revoke {
+  display: none !important;
+}
+
+footer {
+  background: url(https://ropensci.org/images/svg/footer-cube.svg) bottom/contain no-repeat,linear-gradient(94.45deg,#427fd4 1.55%,#64a4ef 98.46%);
+  font-size: 18px;
+  color: #fff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+footer img {
+  width: 100px;
+  max-width: 10vw;
+}
+
+footer .icon {
+  width: 20%;
+  font-size: 21.6px;
+  margin-top: 9px;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer ul li {
+  line-height: 32px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  font-size: inherit;
+  line-height: 28.8px;
+}
+
+.top-4 {
+  margin-top: 20px;
+}
+
+.bottom-8 {
+  margin-bottom: 40px;
+}
+
+footer {
+    margin-bottom: 0;
+}
+
+.navbar-custom {
+            background-color: lightgreen;
+        }
+        /* Modify brand and text color */
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+            color: white;
+        }
+
+/* Reference index. To make it very different from h2 */
+.template-reference-index h3 {
+  font-size: 1.5rem;
+}
+
+/* Code blocks */
+@media (max-width: 575.98px){
+div>div>pre {
+ border-left: none;
+ border-right: none;
+}
+}
+
+/* too long words */
+body {
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+main h1 img {
+  max-width: 120px;
+}
+
+@font-face {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/* Because ProximaNova is very thin by default
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #484f5e;
+  code {
+    font-weight: 500;
+  }
+}
+*/
+
+h4, h5, h6 {
+  &:hover .anchor {display: inline-block;}
+}
+
+
+h1 {
+  color: #005838;
+}
+
+h3 {
+
+    color: #484f5e;
+
+}
+
+
+h2 {
+  &:hover .anchor {
+    display: inline-block;
+    color: #484f5e;
+  }
+}

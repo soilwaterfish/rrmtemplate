@@ -1,0 +1,10 @@
+^\.travis\.yml$
+^README\.Rmd$
+^pkgdown$
+^_pkgdown\.yml$
+^docs$
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+.ropensci-staff

@@ -1,0 +1,36 @@
+Package: rrmtemplate
+Title: pkgdown template and utilities for USDA docs
+Version: 0.1
+Authors@R: 
+    c(person(given = "Josh",
+             family = "Erickson",
+             role = c("cre", "aut"),
+             email = "joshualerickson@gmail.com"))
+Description: This is a private template for use by USDA Renewable Resource Management
+    package ecosystem that uses the appropriate style guides for web-based documents.  Please don't use it for your own non-USDA package.
+License: MIT + file LICENSE
+URL: https://github.com/soilwaterfish/rmmtemplate
+BugReports: https://github.com/soilwaterfish/rmmtemplate/issues
+Suggests: 
+    knitr,
+    magick,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    usethis,
+    withr
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports:
+    curl,
+    jsonlite,
+    memoise,
+    pkgdown (>= 2.0.1),
+    purrr,
+    servr,
+    yaml,
+    xml2,
+    commonmark
+Roxygen: list(markdown = TRUE)
+Config/testthat/edition: 3
