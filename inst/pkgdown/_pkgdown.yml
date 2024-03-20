@@ -1,6 +1,6 @@
 template:
   includes:
-    before_title: '<a href="https://ropensci.org"><img src="https://ropensci.org/img/icon_short_white.svg" id="hexlogo" alt="rOpenSci"></a>'
+    before_title: '<a href="https://www.fs.usda.gov/"><img src="https://www.fs.usda.gov/themes/custom/fs_uswds/logo.svg" id="hexlogo" alt="US Forest Service"></a>'
   bootstrap: 5
   bslib:
     bg: "white"
